@@ -6,13 +6,13 @@ Die Seite verfügt über ein Menü, das am oberen Seitenrand fixiert ist. Am unt
 
 Es freut mich zu wissen, wie man eine Webseite von Grund auf erstellt und wie man präzise Fragen formulieren muss, damit ChatGPT effektiv weiterhelfen kann.
 
-Methoden 
+Methoden: 
 
-Youtube 
-Youtube-Tutorials
-Chat GPT 3.5 
-Google (Zufällige Foren) 
-W3 School
+Youtube, 
+Youtube-Tutorials,
+Chat GPT 3.5,
+Google (Zufällige Foren) ,
+W3 School,
 Unterrichtsstoff FHGR IM1-5
 
 Quellen
