@@ -49,12 +49,12 @@ header {
   letter-spacing: 2px;
 }
 .icon-container {
-  margin-right: 10px; /* Füge einen Abstand zwischen dem Icon und dem Text hinzu */
+  margin-right: 10px; 
 }
 
 .icon {
-  width: 45px; /* Passe die Breite des Icons nach Bedarf an */
-  height: 45px; /* Passe die Höhe des Icons nach Bedarf an */
+  width: 45px; 
+  height: 45px; 
 }
 
 header ul {
@@ -97,7 +97,7 @@ section::before {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 100px; /* Hier den Wert anpassen */
+  height: 100px; 
   background: linear-gradient(to top, #023e8a, transparent);
   z-index: 1000;
 }
@@ -173,7 +173,7 @@ h2{
 }
 
 .gallery img {
-  width: 30%; /* Passen Sie die Breite nach Bedarf an */
+  width: 30%; 
   margin-bottom: 20px;
   border-radius: 8px;
 }
@@ -205,11 +205,11 @@ h2{
   top: 0%;
   left: 0;
   width: 100%;
-  height: 100px; /* Ändere die Höhe des Balkens nach Bedarf */
-  background-image: linear-gradient(to right, #6e76ff, #adc5eb); /* Blau und helles Lila */
+  height: 100px; 
+  background-image: linear-gradient(to right, #6e76ff, #adc5eb); 
   background-size: 800% 100%;
   animation: rainbowAnimation 2s linear infinite;
-  z-index: 1; /* Damit der Balken unter der Schrift liegt */
+  z-index: 1; 
 }
 
 
@@ -273,25 +273,25 @@ position: inherit;
   body {
       font-size: 14px;
       overflow-x: hidden;
-      /* Weitere Anpassungen für den Body hier */
+     
   }
 
   header {
       text-align: center;
       padding: 0;
-      /* Weitere Anpassungen für den Header hier */
+     
   }
 
   header .icon-container {
      margin: 10px 0 0 10px;
-      /* Weitere Anpassungen für das Icon-Container hier */
+      
   }
 
 
 
   header ul li {
       margin-bottom: 10px;
-      /* Weitere Anpassungen für die Navigationspunkte hier */
+     
   }
 
 
@@ -304,18 +304,18 @@ position: inherit;
     .about-me img {
         width: 100%; /* Volle Breite für das Bild */
         max-width: 300px; /* Maximalbreite für bessere Darstellung */
-        border-radius: 8px; /* Optional: Füge abgerundete Ecken hinzu */
+        border-radius: 8px; 
         margin-top: 20px; /* Abstand über dem Bild */
         margin-bottom: 20px; /* Abstand unter dem Bild */
     }
 
 
     .sec {
-      padding: 20px; /* Reduziere den Padding-Bereich */
+      padding: 20px; 
   }
 
   .neon-bar {
-      height: 70px; /* Reduziere die Höhe des Neon-Balkens */
+      height: 70px; 
   }
 
   footer .footer-buttons {
@@ -333,5 +333,3 @@ position: inherit;
   #wassertropf {
       transform: none;
   }
-
-  /* Weitere Anpassungen für kleinere Bildschirme hier */
