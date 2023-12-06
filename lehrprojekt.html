@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @media only screen and (max-width: 600px) {
+            /* Stile für Bildschirme mit einer Breite von maximal 600px (z. B. iPhones) */
+            body {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <div class="icon-container">
+                <img src="img/logo.png" alt="Icon" class="icon">
+            </div>
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hintergrund.html">Hintergrund</a></li>
+            <li><a href="lehrprojekt.html">Lehrprojekt</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="img/moonbackground.png" id="moonbackground">
+        <h2 id="text">Ideen zum Lehrprojekt</h2>
+        <img src="img/bergeoben.png" id="bergeoben">
+        <img src="img/bergemittel.png" id="bergemittel">
+        <img src="img/spiegelungboden.png" id="spiegelungboden">
+        <img src="img/wassertropf.png" id="wassertropf">
+    </section>
+
+    <div class="sec">
+        <h2>Mobilisierung der jungen Generation in Bezug auf Klima</h2>
+        <p>
+            Ich habe mehrere Ideen, was das Lehrprojekt angeht. Einerseits könnte ich mir vorstellen, einen Workshop an
+            Schulen zu geben. Dabei wird das Thema Nachhaltigkeit genauer betrachtet und es werden Aufgaben gelöst.
+            Andererseits könnte ich mir auch vorstellen ein Buch zu machen zum Thema Nachhaltigkeit und dabei Tips
+            reinzuschreiben, zum Beispiel wie man besser auf Plastik verzichtet etc.
+            <br><br>
+            <h2><br><br>Nachhaltigkeits-Workshops<doloribus class="lorem"></doloribus></h2>
+        </p>
+    </div>
+
+    <!-- Bildergalerie -->
+    <div class="gallery">
+        <img src="img/workshop.jpg" alt="Protest 1">
+        <img src="img/workshop2.jpg" alt="Protest 2">
+        <img src="img/workshop3.jpg" alt="Protest 3">
+    </div>
+
+    <div class="container1">
+        <div class="neon-bar"></div>
+    </div>
+
+    <footer>
+        <div class="footer-buttons">
+            <button id="scrollTopBtn" onclick="scrollToTop()">Nach oben</button>
+            <a href="https://www.instagram.com" target="_blank" class="social-link">
+                <button class="social-button">Instagram</button>
+            </a>
+            <a href="https://www.pinterest.com" target="_blank" class="social-link">
+                <button class="social-button">Pinterest</button>
+            </a>
+        </div>
+        <p>&copy; 2023 Giorgia Liuzzo. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="js/parallax.js"></script>
+    <script>
+        // Funktion, um zum Seitenanfang zu scrollen
+        function scrollToTop() {
+            document.body.scrollTop = 0; // Für Safari
+            document.documentElement.scrollTop = 0; // Für Chrome, Firefox, IE und Opera
+        }
+
+        // Funktion, um den "Nach oben"-Button anzuzeigen oder auszublenden
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            var scrollTopBtn = document.getElementById("scrollTopBtn");
+
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  width: 100%;
+  background: #003566;
+  
+}
+body {
+  color: white;
+}
+
+ol {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.icon-container {
+  margin-right: 10px; /* Füge einen Abstand zwischen dem Icon und dem Text hinzu */
+}
+
+.icon {
+  width: 45px; /* Passe die Breite des Icons nach Bedarf an */
+  height: 45px; /* Passe die Höhe des Icons nach Bedarf an */
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+header ul li a:hover, 
+header ul li a.active {
+  background: #fff;
+  color: #22223b;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px; /* Hier den Wert anpassen */
+  background: linear-gradient(to top, #023e8a, transparent);
+  z-index: 1000;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#text {
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9;
+}
+
+.sec {
+  position: relative;
+  padding: 100px;
+  padding-top: 0;
+  background: #003566;
+  text-decoration-color: #fff;
+}
+
+.sec h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+h2{
+  color: #fff;
+  font-size: 1.5em;
+}
+.sec p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.sec p {
+  color: #fff;
+  font-size: 16px;
+}
+
+
+.parallax-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* style.css */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 30%; /* Passen Sie die Breite nach Bedarf an */
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+
+.fixed-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #00f; /* Neonblau */
+  font-size: 2em;
+  z-index: 2; /* Damit die Schrift über dem Balken liegt */
+}
+
+.container {
+  padding-top: 70px;
+ }
+
+ .portrait img {
+
+
+  
+ }
+
+
+.neon-bar {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Ändere die Höhe des Balkens nach Bedarf */
+  background-image: linear-gradient(to right, #6e76ff, #adc5eb); /* Blau und helles Lila */
+  background-size: 800% 100%;
+  animation: rainbowAnimation 2s linear infinite;
+  z-index: 1; /* Damit der Balken unter der Schrift liegt */
+}
+
+
+@keyframes rainbowAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+
+
+
+
+/* CSS für die Footer-Buttons */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #003566;
+  color: #fff;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#scrollTopBtn,
+.social-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#scrollTopBtn:hover,
+.social-button:hover {
+  background-color: #fff;
+  color: #003566;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+
+.about-me {
+  display: flex;
+position: inherit;
+   
+}
+
+ /* ab hier responsive */
+
+ @media only screen and (max-width: 600px) {
+  /* Stile für Bildschirme mit einer Breite von maximal 600px (z. B. iPhones) */
+  body {
+      font-size: 14px;
+      overflow-x: hidden;
+      /* Weitere Anpassungen für den Body hier */
+  }
+
+  header {
+      text-align: center;
+      padding: 0;
+      /* Weitere Anpassungen für den Header hier */
+  }
+
+  header .icon-container {
+     margin: 10px 0 0 10px;
+      /* Weitere Anpassungen für das Icon-Container hier */
+  }
+
+
+
+  header ul li {
+      margin-bottom: 10px;
+      /* Weitere Anpassungen für die Navigationspunkte hier */
+  }
+
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .about-me img {
+        width: 100%; /* Volle Breite für das Bild */
+        max-width: 300px; /* Maximalbreite für bessere Darstellung */
+        border-radius: 8px; /* Optional: Füge abgerundete Ecken hinzu */
+        margin-top: 20px; /* Abstand über dem Bild */
+        margin-bottom: 20px; /* Abstand unter dem Bild */
+    }
+
+
+    .sec {
+      padding: 20px; /* Reduziere den Padding-Bereich */
+  }
+
+  .neon-bar {
+      height: 70px; /* Reduziere die Höhe des Neon-Balkens */
+  }
+
+  footer .footer-buttons {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+
+  /* Deaktivierung des Parallax-Effekts */
+  #moonbackground,
+  #bergeoben,
+  #bergemittel,
+  #spiegelungboden,
+  #wassertropf {
+      transform: none;
+  }
+
+  /* Weitere Anpassungen für kleinere Bildschirme hier */

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* ab jetzt Stil für Bildschirme mit einer Breite von max. 600px=  iPhones */
+        @media only screen and (max-width: 600px) {
+            
+            body {
+                font-size: 14px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <div class="icon-container">
+                <img src="img/logo.png" alt="Icon" class="icon">
+            </div>
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hintergrund.html">Hintergrund</a></li>
+            <li><a href="lehrprojekt.html">Lehrprojekt</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+        </ul>
+    </header>
+
+    <style>
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* CSS für Betonung des aktuellen Abschnitts in der Navigation */
+        header ul li.active a {
+            background: #fff;
+            color: #22223b;
+        }
+    </style>
+    <!-- JavaScript für die Betonung des aktuellen Abschnitts in der Navigation -->
+    <script>
+        window.addEventListener('scroll', function () {
+            var sections = document.querySelectorAll('section');
+            var navLinks = document.querySelectorAll('header ul li a');
+            var currentSection = '';
+            sections.forEach(function (section) {
+                var sectionTop = section.offsetTop;
+                var sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(function (link) {
+                link.parentNode.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.parentNode.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <section> 
+        <img src="img/moonbackground.png" id="moonbackground">
+        <h2 id="text">Mein Bachelorthema</h2>
+        <img src="img/bergeoben.png" id="bergeoben">
+        <img src="img/bergemittel.png" id="bergemittel">
+        <img src="img/spiegelungboden.png" id="spiegelungboden">
+        <img src="img/wassertropf.png" id="wassertropf">
+    </section>
+
+    <div class="container1">
+        <div class="neon-bar"></div>
+        
+    </div>
+    <div class="sec"> 
+        <h2>Mobilisierung der jungen Generation in Bezug auf Klima</h2>
+        <p> 
+        </p>
+    </div>
+
+    <!-- Bildergalerie -->
+    <div class="gallery">
+    <img src="img/protest1.jpg" alt="Protest 1">
+<img src="img/protest2.jpg" alt="Protest 2">
+<img src="img/protest3.jpg" alt="Protest 3">
+<img src="img/protest4.jpg" alt="Protest 4">
+<img src="img/protest5.jpg" alt="Protest 5">
+<img src="img/protest6.jpg" alt="Protest 6">
+    </div>
+
+    <!-- blauer Balken mit Zwischentitel -->
+<div class="blue-bar">
+    <h2>Zum Thema</h2>
+    <p>Das politische Engagement junger Erwachsener hat in den letzten Jahren eine beeindruckende Transformation erlebt. Demos auf den Strassen, virale Kampagnen, humorvolle politische Memes und die Massenmobilisierung durch Online-Petitionen sind heute allgegenwärtige Zeichen einer neuen Ära politischer Aktivität.
+        In dieser aufkeimenden Bewegung stehen insbesondere die Klimaschutz-, LGBTQ+- und Black Lives Matter-Bewegungen im Rampenlicht und fungieren als kraftvolle Sprachrohre der Generation Z. Doch welche treibenden Kräfte liegen hinter diesem rapiden Aufstieg? Warum haben diese neuen Formen des politischen Aktivismus so rasch an Einfluss gewonnen, und wie beeinflussen sie die Meinungsbildung junger Erwachsener in der Schweiz?
+       Ich hinterfrage den Aktivismus ein bisschen und habe manchmal das Gefühl, dass es bei vielen mehr ein Trend ist. Viele junge Politiker wissen,  wie man mit der jungen Generation kommuniziert und auf was diese heutzutage direkt anspring</p>
+</div>
+
+<style>
+  /* CSS für den blauen Balken und den Zwischentitel */
+  .blue-bar {
+    background-color: #003566; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px; 
+  }
+
+  .blue-bar h2 {
+    margin: 0; 
+    font-size: 24px; 
+  }
+</style>
+
+
+    <script src="js/parallax.js"></script>
+  
+
+    <!-- Footer -->
+   
+
+    <footer>
+        <div class="footer-buttons">
+            <button id="scrollTopBtn" onclick="scrollToTop()">Nach oben</button>
+            <a href="https://www.instagram.com" target="_blank" class="social-link">
+                <button class="social-button">Instagram</button>
+            </a>
+            <a href="https://www.pinterest.com" target="_blank" class="social-link">
+                <button class="social-button">Pinterest</button>
+            </a>
+        </div>
+        <p>&copy; 2023 Giorgia Liuzzo. Alle Rechte vorbehalten.</p>
+    </footer>
+<script>
+    // Funktion, um zum Seitenanfang zu scrollen
+    function scrollToTop() {
+        document.body.scrollTop = 0; // Für Safari
+        document.documentElement.scrollTop = 0; // Für Chrome, Firefox, IE und Opera
+    }
+
+    // Funktion, um den "Nach oben"-Button anzuzeigen oder auszublenden
+    window.onscroll = function() { scrollFunction() };
+
+    function scrollFunction() {
+        var scrollTopBtn = document.getElementById("scrollTopBtn");
+
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
