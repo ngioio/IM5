@@ -30,7 +30,7 @@ window.onscroll = function() {
 function scrollFunction() {
     var scrollTopBtn = document.getElementById("scrollTopBtn");
 
-    // Wenn der Benutzer 20px oder mehr nach unten scrollt, zeige den Button an, sonst verstecke ihn
+    // Wenn der Benutzer 20px oder mehr nach unten scrollt, zeige den Button an, sonst verstecke ihn//
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollTopBtn.style.display = "block";
     } else {
